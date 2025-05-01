@@ -1,5 +1,5 @@
 /*:
- [< Previous](@previous)                    [Home](o.%20Introduction)                    [Next >](@next)
+ [< Previous](@previous)                    [Home](0.%20Introduction)                    [Next >](@next)
  ## Categories
 >* Symbols can be categorized.
 >* The ***categories.plist*** is an array of dictionaries with 3 key-value pairs.
