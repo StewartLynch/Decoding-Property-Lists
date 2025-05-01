@@ -1,6 +1,6 @@
 # Decoding Property Lists in Xcode
 
-![mac128](Images/1. Decoding Property Lists.png) This is the starter project for the video on decoding property lists in Xcode
+![Thumbnail](Images/Thumbnail.png) This is the starter project for the video on decoding property lists in Xcode
 
 Scheduled Release Date: June 1, 2025
 
