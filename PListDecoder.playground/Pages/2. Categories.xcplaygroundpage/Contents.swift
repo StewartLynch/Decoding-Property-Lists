@@ -7,4 +7,14 @@
 */
 import Foundation
 
+struct Category: Decodable {
+    let icon: String
+    let key: String
+    let label: String
+}
 
+let categories = decodePlist([Category].self, from: "categories")
+print(categories.count)
+categories.forEach { category in
+    print(category.label)
+}

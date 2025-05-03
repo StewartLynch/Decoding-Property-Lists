@@ -8,3 +8,13 @@
 
 import Foundation
 
+struct Symbol_SearchTerms: Decodable {
+    let name: String
+    let searchTerms: [String]
+}
+
+let symbolSearchTermsDict = decodePlist([String : [String]].self, from: "symbol_search")
+let symbolSearchTerms = symbolSearchTermsDict.map { name, searchTerms in
+    Symbol_SearchTerms(name: name, searchTerms: searchTerms)
+}
+print(symbolSearchTerms.count)

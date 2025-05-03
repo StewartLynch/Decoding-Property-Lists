@@ -9,3 +9,12 @@
 
 
 import Foundation
+
+struct Symbol_Availability: Decodable {
+    let symbols: [String : String]
+    let year_to_release: [String : [String : String]]
+}
+
+let symbolAvailability = decodePlist(Symbol_Availability.self, from: "name_availability")
+print(symbolAvailability.symbols.keys.count)
+print(symbolAvailability.year_to_release.keys.count)

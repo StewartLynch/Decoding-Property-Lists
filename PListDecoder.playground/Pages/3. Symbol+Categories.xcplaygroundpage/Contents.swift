@@ -6,3 +6,16 @@
 >* The value is an array of strings representing a category.
 */
 import Foundation
+
+struct Symbol_Categories: Decodable {
+    let name: String
+    let categories: [String]
+}
+
+let symbolCategoriesDict = decodePlist([String : [String]].self, from: "symbol_categories")
+let symbolCategories = symbolCategoriesDict.map { name, categories in
+    Symbol_Categories(name: name, categories: categories)
+}
+
+print(symbolCategories.count)
+print(symbolCategories[10].name, symbolCategories[10].categories)
