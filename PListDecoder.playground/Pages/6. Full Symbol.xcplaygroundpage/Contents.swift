@@ -13,12 +13,12 @@ struct Category: Decodable {
     let label: String
 }
 
-struct Symbol_Categories: Decodable {
+struct Symbol_Categories {
     let name: String
     let categories: [String]
 }
 
-struct Symbol_SearchTerms: Decodable {
+struct Symbol_SearchTerms {
     let name: String
     let searchTerms: [String]
 }

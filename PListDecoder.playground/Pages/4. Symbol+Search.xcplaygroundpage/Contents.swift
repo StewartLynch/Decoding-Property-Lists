@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Symbol_SearchTerms: Decodable {
+struct Symbol_SearchTerms {
     let name: String
     let searchTerms: [String]
 }
